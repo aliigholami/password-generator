@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="password-wrapper">
+            <div id="password"></div>
+            <button id="copy" onclick="copyToClipboard()">Copy</button>
+        </div>
+        <div id="options">
+            <div class="form-container">
+                
+                <form class="form">
+                    <label>Length</label>
+                    <input type="number" id="numLength" min="6" max="40" value="10">
+                </form>
+            </div>
+            <div class="form-container">
+
+                <form class="form">
+                    <label>Uppercase</label>
+                    <input type="checkbox" name="uppercase1" id="uppercase">
+
+                </form>
+            </div>
+            <div class="form-container">
+                <form class="form">
+                    <label>Lowercase</label>
+                    <input type="checkbox" name="lowercase1" id="lowercase">
+                </form>
+            </div>
+            <div class="form-container">
+                <form class="form">
+                    <label>Numbers</label>
+                    <input type="checkbox" name="numbers1" id="numbers">
+                </form>
+            </div>
+            <div class="form-container">
+                <form class="form">
+                    <label>Special Characters</label>
+                    <input type="checkbox" name="specialchar1" id="specialchar">
+                </form>
+            </div>
+        </div>
+        <button id="generate" onclick="generate()">Generate</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

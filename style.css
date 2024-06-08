@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    background-color: bisque;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    border: 1px solid black;
+    min-width: 25%;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: azure;
+}
+#password{
+    min-width:70%;
+}
+#copy{
+    background-color: darkkhaki;
+    border-radius: 1.5rem;
+    border: none;
+    margin: 2%;
+}
+#password-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+#generate{
+    border: none;
+    background-color: darkkhaki;
+    border-radius: 1.5rem;
+    margin:auto;
+    min-width:25%;
+}
+#numLength{
+    max-width:50px;
+}
